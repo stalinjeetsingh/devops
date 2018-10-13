@@ -1,7 +1,7 @@
 node {
 stage ('pull the git repo')
 {
-git 'https://github.com/stalinjeetsingh/devops.git'
+git 'https://github.com/cit31/studentapp-code'
 }
 stage ('maven clean and compile')
 {
