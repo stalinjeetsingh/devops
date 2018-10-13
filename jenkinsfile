@@ -3,6 +3,9 @@ stage ('pull the git repo')
 {
 git 'https://github.com/stalinjeetsingh/devops.git'
 }
-
+stage ('maven clean and compile')
+{
+sh 'mvn clean compile'
+}
 }
 
