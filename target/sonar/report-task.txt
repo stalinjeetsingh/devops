@@ -1,0 +1,7 @@
+organization=stalinjeetsingh-github
+projectKey=sample11
+serverUrl=https://sonarcloud.io
+serverVersion=7.4.0.17996
+dashboardUrl=https://sonarcloud.io/dashboard?id=sample11
+ceTaskId=AWZtACDEny3k_lyf1bm6
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AWZtACDEny3k_lyf1bm6
