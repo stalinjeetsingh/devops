@@ -5,12 +5,15 @@ git 'https://github.com/stalinjeetsingh/devops.git'
 }
 stage ('maven clean and compile')
 {
-sh 'mvn clean compile'
+sh 'mvn clean'
 }
-
-stage ('package')
+stage ('sonar test')
 {
-sh 'mvn package'
+sh 'mvn sonar:sonar \
+  -Dsonar.projectKey=sample11 \
+  -Dsonar.organization=stalinjeetsingh-github \
+  -Dsonar.host.url=https://sonarcloud.io \
+  -Dsonar.login=c4cec31da685fcb82bb0a50d0244164e50e0632a'
 }
 }
 
