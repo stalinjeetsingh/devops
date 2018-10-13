@@ -8,7 +8,9 @@ stage ('maven clean and compile')
 sh 'mvn clean compile'
 }
 
-stage ('sonar test')
+stage 
+{
+('sonar test')
 sh 'mvn sonar:sonar \
   -Dsonar.projectKey=sample11 \
   -Dsonar.organization=stalinjeetsingh-github \
